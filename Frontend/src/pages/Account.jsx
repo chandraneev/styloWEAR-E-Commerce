@@ -27,7 +27,7 @@ function Account(){
     return<>
     <Navbar/>
     <div className='outerdiv'>
-      <div className='innerdiv' id="innerdivleft">
+      <div className='innerdiv' id="innerdivleftinfo">
         <div className='innerdiv1'id="upperdiv">
           <MdAccountCircle className='profilepic'/>
           <h3 className='welmsg'>Hello,</h3>
