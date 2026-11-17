@@ -18,16 +18,24 @@ const finaltotal=subtotal+shippingfee+platformfee-discount;
 
     return<>
     <Navbar/>
+    {cartquantity == 0 ? (
+      <div className="emptycart">
+          <h3 className='welmsg'>Your Cart is Empty!</h3>
+          <pre className='welmsg'>Added any products to your cart.</pre>
+      </div>
+    ) 
+    : 
+    (
     <div className='outerdiv'>
       <div className='innerdiv' id="innerdivleft">
         
         <div className='innerdiv1'>
           <ul className="list-group">
-            <li className="list-group-item" id="div1" ><div className="pricediv1">Sub Total</div><div className="pricediv2"><FaRupeeSign/> {cartquantity !== 0 ? subtotal : 0}/-</div></li>
+            <li className="list-group-item" id="div1" ><div className="pricediv1">Sub Total</div><div className="pricediv2"><FaRupeeSign/> {subtotal}/-</div></li>
             <li className="list-group-item" id="div2"><div className="pricediv1">Shipping Fee</div><div className="pricediv2">+ {shippingfee}/-</div></li>
             <li className="list-group-item" id="div3"><div className="pricediv1">Platform Fee</div><div className="pricediv2">+ {platformfee}/-</div></li>
             <li className="list-group-item" id="div4"><div className="pricediv1">Discount</div><div className="pricediv2">- {discount}/-</div></li>
-            <li className="list-group-item" id="div5"><div className="pricediv1">Total Price</div><div className="pricediv2"><FaRupeeSign/> {cartquantity !== 0 ? finaltotal : 0}/-</div></li>
+            <li className="list-group-item" id="div5"><div className="pricediv1">Total Price</div><div className="pricediv2"><FaRupeeSign/> {finaltotal}/-</div></li>
             <li className="list-group-item" id="buydiv"><Link className="nav-link" to="/payment">Place Order</Link></li>
           </ul>
         </div>
@@ -41,7 +49,7 @@ const finaltotal=subtotal+shippingfee+platformfee-discount;
          <Backtotop/>
       </div>
     </div>
-    
+    )}  
     </>
 }
 

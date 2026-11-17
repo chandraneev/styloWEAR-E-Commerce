@@ -8,8 +8,18 @@ import Backtotop from "./Backtotopcom";
 function Delivers(){
     let {delivers} = useContext(Ecommercestore);
        const navigate=useNavigate();
+       const deliversquantity = delivers.length;
     
         return<>
+        { deliversquantity == 0 ? (
+      <div className="empty">
+          <h3 className='welmsg'>Your Deliver list is Empty!</h3>
+          <pre className='welmsg'>You have not delivered any order yet.</pre>
+      </div>
+    ) 
+    : 
+    (
+        <>
         {delivers.map((item) => (
          <div class="card mb-3" id="carddetails4" key={item._id}>
           <div class="row g-0">
@@ -36,6 +46,8 @@ function Delivers(){
           </div>
         ))}
         <Backtotop/>
+        </>
+    )}
     </>
 }
 

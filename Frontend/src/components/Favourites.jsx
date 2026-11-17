@@ -9,8 +9,18 @@ import { FaRupeeSign } from "react-icons/fa";
 function Wishlist(){
   let {favourites,deletefavourite} = useContext(Ecommercestore);
   const navigate=useNavigate();
+  const favouritesquantity = favourites.length;
 
     return<>
+    {favouritesquantity == 0 ? (
+      <div className="emptycart">
+          <h3 className='welmsg'>Your Favourite list is Empty!</h3>
+          <pre className='welmsg'>Added any products to your favourite list.</pre>
+      </div>
+    ) 
+    : 
+    (
+     <>
      <div class="row row-cols-1 row-cols-md-3 g-3" id="cards">
       {favourites.map((favourite)=>(
       <div class="col" key={favourite._id}>
@@ -31,6 +41,9 @@ function Wishlist(){
       ))}
     </div>
     <Backtotop/>
+    </>
+     )}
+    
     </>
 }
 

@@ -9,8 +9,18 @@ import Backtotop from "./Backtotopcom";
 function Orders(){
   let {orders,UpdateStatus} = useContext(Ecommercestore);
    const navigate=useNavigate();
+   const ordersquantity = orders.length;
 
     return<>
+    { ordersquantity == 0 ? (
+      <div className="empty">
+          <h3 className='welmsg'>Your Order list is Empty!</h3>
+          <pre className='welmsg'>You have not received any order yet.</pre>
+      </div>
+    ) 
+    : 
+    (
+    <>
     {orders.map((item) => (
      <div class="card mb-3" id="carddetails4" key={item._id}>
       <div class="row g-0">
@@ -38,7 +48,8 @@ function Orders(){
       </div>
     ))}
     <Backtotop/>
-    
+    </>
+    )}
    
     </>
 }

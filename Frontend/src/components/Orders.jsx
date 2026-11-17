@@ -9,8 +9,18 @@ import { Ecommercestore } from "../store/E-commerce-store.jsx";
 function Orders(){
   let {orders} = useContext(Ecommercestore);
   const navigate=useNavigate();
+  const ordersquantity = orders.length;
 
     return<>
+    { ordersquantity == 0 ? (
+      <div className="emptycart">
+          <h3 className='welmsg'>Your Order list is Empty!</h3>
+          <pre className='welmsg'>Buy any products and explore exciting deals.</pre>
+      </div>
+    ) 
+    : 
+    (
+    <>
     {orders.map((item) => (
      <div class="card mb-3" id="carddetails4" key={item._id}>
       <div class="row g-0" >
@@ -40,6 +50,8 @@ function Orders(){
     </div>
     ))}
     <Backtotop/>
+    </>
+  )}
    
     </>
 }

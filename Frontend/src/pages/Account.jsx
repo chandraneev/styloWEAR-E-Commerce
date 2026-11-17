@@ -37,7 +37,7 @@ function Account(){
           <ul className="list-group">
             <li className="list-group-item" id="lowerdiv1" onClick={()=>setshowcomponent("info")}><FaCircleInfo className='icon'/>My Information</li>
             <li className="list-group-item" id="lowerdiv2" onClick={()=>setshowcomponent("orders")}><IoBagHandle className='icon'/>My Orders</li>
-            <li className="list-group-item" id="lowerdiv3" onClick={()=>setshowcomponent("wishlist")}><MdFavorite className='icon'/>Wishlist</li>
+            <li className="list-group-item" id="lowerdiv3" onClick={()=>setshowcomponent("wishlist")}><MdFavorite className='icon'/>Favourite List</li>
             <li className="list-group-item" id="lowerdiv6" onClick={Logoutbtn}><LuLogOut className='icon'/>Logout</li>
           </ul>
         </div>

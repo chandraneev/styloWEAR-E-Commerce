@@ -426,6 +426,14 @@ html,body{
 #cartimg{
     height: 100%;
 }
+.emptycart{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .icon{
     margin-right: 6px;
 }
