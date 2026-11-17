@@ -168,7 +168,7 @@ html,body{
     gap: 10px;
 }
 #innerdivleft{
-    width: 30%;
+    width: 38%;
     display: flex;
     flex-direction: column;
     justify-content:start;
@@ -176,15 +176,6 @@ html,body{
     gap: 20px;
     margin-top: 2%;
 }
-/*#innerdivleftacc{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    align-items: center;
-    color: orangered;
-    gap: 20px;
-}*/
 #innerdivright{
     width: 65%;
     display: flex;
