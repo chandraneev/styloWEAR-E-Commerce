@@ -1,0 +1,71 @@
+const { default: mongoose } = require("mongoose");
+
+const productSchema=new mongoose.Schema({
+    productname:{
+        type:String,
+        required:true,
+    },
+    brandname:{
+        type:String,
+        required:true,
+    },
+    description:{
+        type:String,
+        required:true,
+    },
+    category:{
+        type:String,
+        required:true,
+    },
+    subcategory:{
+        type:String,
+        required:true,
+    },
+    ratings:{
+        type:String,
+        required:true,
+    },
+    price:{
+        type:Number,
+        required:true,
+    },
+    colour:{
+        type:String,
+        required:true,
+    },
+    meterial:{
+        type:String,
+        required:true,
+    },
+    delivery:{
+        type:String,
+        required:true,
+    },
+    reference:{
+        type:String,
+        default:Date.now
+    },
+    sizes:{
+        type:[String],
+        required:true,
+    },
+    images:[
+        {
+            url:{   
+            type:String,
+            required:true,
+            },
+            public_id:{   
+            type:String,
+            required:true,
+            }
+        }
+    ],
+    addedby:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"Admin",
+        required:true,
+    },
+});
+
+module.exports=mongoose.model("Product",productSchema);

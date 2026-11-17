@@ -1,0 +1,471 @@
+html,body{
+    background-color:rgb(34, 33, 33);
+}
+#root{
+     background-color:rgb(34, 33, 33);
+}
+.regiscon{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1%;
+    color: orangered;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 20px;
+}
+.logincon{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+    color: orangered;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 20px;
+}
+.navcon1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: orangered;
+    background-color: black;
+    padding: 10px;
+}
+.navname{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.navsearch1{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+.navsearch2{
+    width: 40%;
+    display: flex;
+    gap: 5px;
+}
+.search{
+    width: 75%;
+    border: 2px solid orangered;
+    border-radius: 5px;
+}
+.searchbox{
+    width: 100%;
+    height: 100%;
+}
+.button{
+    color: black;
+    font-weight: 600;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.button2{
+    color: black;
+    font-weight: 600;
+    font-size: small;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 3px;
+}
+.button2:hover{
+    background-color: rgb(168, 47, 3);
+    font-weight: bold;
+}
+.button3{
+    color: black;
+    font-weight: 600;
+    font-size: small;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 3px;
+}
+.searchbutton{
+    color: black;
+    font-weight: 600;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.searchbutton:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.navitem{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.count{
+    display: flex;
+}
+.countdiv{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: black;
+    background-color: orangered;
+}
+.navcon2{
+    width: 100%;
+    display: flex;
+    justify-content:baseline;
+    gap: 30px;
+    color: orangered;
+    background-color: rgb(14, 14, 14);
+    padding: 5px;
+    padding-left: 4%;
+}
+.welmsg{
+    color: orangered;
+    padding-left: 12px;
+}
+.categorymsg{
+    color: black;
+    background-color: orangered;
+    padding-left: 5px;
+}
+.dropdown{
+    width: 100%;
+    background-color: black;
+    border: 1px solid orangered;
+    color: orangered;
+    padding: 5px;
+}
+.smallpics{
+    width: 33.60%;
+    display: flex;
+    background-color: black;
+    border: 1px solid orangered;
+    color: orangered;
+}
+.profilepic{
+    font-size: 70px;
+    color: orangered;
+}
+.outerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#innerdivleft{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2%;
+}
+/*#innerdivleftacc{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    color: orangered;
+    gap: 20px;
+}*/
+#innerdivright{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: orangered;
+    border-radius:5px;
+    gap: 5px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+#innerdivrightacc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: orangered;
+    border-radius:5px;
+    gap: 5px;
+    margin-top: 2%;
+}
+#cards{
+    height: 100%;
+    width: 100%;
+}
+#carddetails1,#carddetails2,#carddetails3,#carddetails5,#carddetails6{
+    color: orangered;
+    background-color: rgb(20, 20, 20);
+    border-radius:5px;
+}
+#carddetails4{
+    color: orangered;
+    background-color: rgb(20, 20, 20);
+    border-radius:5px;
+}
+#cardphoto{
+    height: 250px;
+    width: 100%;
+}
+.innerdiv1{
+    width: 80%;
+}
+#upperdiv{
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid orangered;
+}
+#upperdivpics{
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid orangered;
+}
+#lowerdiv{
+    width: 100%;
+    border: 2px solid orangered;
+}
+#lowerdiv1,#lowerdiv2,#lowerdiv3,#lowerdiv4,#lowerdiv5,#lowerdiv6{
+    color: orangered;
+    background-color: black;
+    border: 2px solid orangered;
+}
+#lowerdiv1:hover,#lowerdiv2:hover,#lowerdiv3:hover,#lowerdiv4:hover,#lowerdiv5:hover{
+    transform: scale(1.1);
+}
+#lowerdiv6:hover{
+    color: black;
+    background-color: red;
+    font-weight: bold;
+
+}
+#div1,#div2,#div3,#div4,#div5{
+    color: orangered;
+    background-color: black;
+    border: 2px solid orangered;
+}
+.pricediv1{
+    font-size: 18px;
+}
+.pricediv2{   
+    font-weight: bold;
+}
+#buydiv{
+    color: black;
+    background-color: orangered;
+    border: 2px solid orangered;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+#buydiv:hover{
+    background-color: rgb(214, 61, 5);
+    font-size: 18px;
+}
+.footer1{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: rgb(34, 34, 92);
+}
+.footer2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(9, 9, 69);
+}
+.content{
+    width: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.footer3{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(2, 2, 36);
+}
+.footer4{
+    width: 100%;
+    color: orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.aboutouter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.aboutinner{
+    width: 80%;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+.innerleft{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.innerright{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 20px;
+}
+.outerpicdiv{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.innerpicdiv{
+    width: 50%;
+    height: 100%;
+}
+.innersalepicdiv{
+    width: 100%;
+    height: 100%;
+}
+.innerpicsmall{
+    width: 100%;
+    height: 100%; 
+}
+.innerpicsmall:hover{
+    transform: scale(1.1);
+}
+.innerpicbig{
+    width: 100%;
+    height: 100%; 
+}
+.homecardsdiv{
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+.size{
+    color: orangered;
+    background-color:rgb(20, 20, 20);
+    border: 2px solid orangered;
+    border-radius: 4px;
+}
+#cartimg{
+    height: 100%;
+}
+.icon{
+    margin-right: 6px;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+}
+.myordersdiv{
+    display: flex;
+    gap: 70px;
+}
+.mywishlistdiv{
+    display: flex;
+    gap: 30px;
+}
+.mydetaildiv{
+    display: flex;
+    gap: 20px;
+}
+center{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.userinfodiv{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    background-color: rgb(14, 14, 14);
+    border-radius: 7px;
+}
+#information1, #information2, #information3, #information4, #information5, #information6, #information7, #information8, #information9{
+    padding-bottom: 20px;
+}
+#infoname1, #infoname2, #infoname3, #infoname4, #infoname5, #infoname6, #infoname7, #infoname8, #infoname9{
+    font-weight: bold;
+}
+.homecate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+    width: 40%;
+    display: flex;
+    position: absolute;
+    top: 26vh;
+    margin-left: 28%;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(23, 23, 23);
+    border-radius: 5px;
+    justify-content: center;
+    background-color: black;
+    border: 2px solid black;
+}
+.sizediv{
+    display: flex;
+    gap: 10%;
+    
+}
+.lablediv{
+    display: flex;
+    gap: 4px;
+}
+.inputcheckbox{
+    accent-color: orangered;
+    width: 16px;
+}
+
+
+
